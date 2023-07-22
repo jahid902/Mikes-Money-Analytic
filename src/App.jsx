@@ -18,22 +18,22 @@ function App() {
           <div className="space-y-4">
             <PiButterflyDuotone
               size={25}
-              className="text-sky-600"
+              className="text-sky-600 cursor-pointer"
             ></PiButterflyDuotone>
-            <BiSearchAlt size={25}></BiSearchAlt>
+            <BiSearchAlt size={25} className="cursor-pointer"></BiSearchAlt>
           </div>
           <div className="flex-grow pt-16 space-y-4">
             <BiHomeAlt
               size={25}
-              className="text-white p-0.5 rounded-md bg-sky-700"
+              className="text-white p-0.5 cursor-pointer rounded-md bg-sky-700"
             ></BiHomeAlt>
-            <FaNewspaper size={25}></FaNewspaper>
-            <FaRegNewspaper size={25}></FaRegNewspaper>
-            <img className="w-7 h-7  rounded-full" src={avatar} alt="" />
+            <FaNewspaper size={25} className="cursor-pointer"></FaNewspaper>
+            <FaRegNewspaper size={25} className="cursor-pointer"></FaRegNewspaper>
+            <img className="w-7 h-7 cursor-pointer rounded-full" src={avatar} alt="" />
           </div>
           <div className="space-y-4">
-            <PiNotificationLight size={25}></PiNotificationLight>
-            <BiLogOut size={25}></BiLogOut>
+            <PiNotificationLight size={25} className="cursor-pointer"></PiNotificationLight>
+            <BiLogOut size={25} className="cursor-pointer"></BiLogOut>
           </div>
         </div>
 
@@ -120,18 +120,19 @@ function App() {
           <div>
             <h3 className="font-bold ">Contributions OverTime</h3>
             <div className="flex gap-2 my-3 justify-between">
+            <span className="bg-teal-500 h-[10px] rounded-full flex my-auto text-slate-200">
+                ...
+              </span>
+              <p className="font-sans text-xs">
+                Employee: <span className="font-bold text-xs">K 52,500</span>
+              </p>
               <span className="bg-violet-600 h-[10px] rounded-full flex my-auto text-slate-200">
                 ...
               </span>
               <p className="font-sans text-xs">
                 Employer: <span className="font-bold text-xs">K 73,500</span>
               </p>
-              <span className="bg-teal-500 h-[10px] rounded-full flex my-auto text-slate-200">
-                ...
-              </span>
-              <p className="font-sans text-xs">
-                Employee: <span className="font-bold text-xs">K 52,500</span>
-              </p>
+              
               <span className="bg-black h-[10px] rounded-full flex my-auto text-slate-200">
                 ...
               </span>
