@@ -12,33 +12,33 @@ import MoneyChart from "./MoneyChart";
 function App() {
   return (
     <>
-      <div className="font-serif flex flex-col md:flex-row gap-2 bg-gradient-to-b from-slate-200 to-slate-400 px-2 py-4">
+      <div className="font-serif  flex flex-col md:flex-row gap-2 bg-gradient-to-b from-slate-200 to-slate-400 px-2 py-4">
         {/* nav section */}
-        <div className="w-[5%] rounded-md items-center flex flex-row md:flex-col justify-between py-6 bg-gradient-to-t from-slate-200 to-slate-100 px-3">
-          <div className="space-y-4">
+        <div className="w-full  md:w-[5%] order-4 md:order-1 rounded-md items-center flex flex-row md:flex-col justify-evenly md:justify-between p-2 md:py-6 bg-gradient-to-t from-slate-200 to-slate-100 md:px-3">
+          <div className="md:space-y-4 flex flex-row gap-6 md:gap-0 md:flex-col order-2 md:order-1">
             <PiButterflyDuotone
               size={25}
               className="text-sky-600 cursor-pointer"
             ></PiButterflyDuotone>
             <BiSearchAlt size={25} className="cursor-pointer"></BiSearchAlt>
           </div>
-          <div className="flex-grow pt-16 space-y-4">
+          <div className="md:flex-grow order-1 md:order-2 flex flex-row md:flex-col gap-4 md:gap-0  justify-between md:justify-start md:pt-16 md:space-y-4">
             <BiHomeAlt
               size={25}
               className="text-white p-0.5 cursor-pointer rounded-md bg-sky-700"
             ></BiHomeAlt>
-            <FaNewspaper size={25} className="cursor-pointer"></FaNewspaper>
+            <FaNewspaper size={25} className="cursor-pointer "></FaNewspaper>
             <FaRegNewspaper size={25} className="cursor-pointer"></FaRegNewspaper>
             <img className="w-7 h-7 cursor-pointer rounded-full" src={avatar} alt="" />
           </div>
-          <div className="space-y-4">
+          <div className="md:space-y-4 flex flex-row gap-4 md:gap-0 md:flex-col order-3">
             <PiNotificationLight size={25} className="cursor-pointer"></PiNotificationLight>
             <BiLogOut size={25} className="cursor-pointer"></BiLogOut>
           </div>
         </div>
 
         {/* profile section */}
-        <div className="w-[25%] rounded-md space-y-8 flex flex-col bg-gradient-to-t from-slate-50 via-slate-200 to-slate-300 px-6 py-10">
+        <div className="w-full md:w-[25%] order-1 md:order-2 rounded-md space-y-8 flex flex-col bg-gradient-to-t from-slate-50 via-slate-200 to-slate-300 px-6 py-10">
           <div className="flex justify-start gap-3">
             <img
               className="w-14 h-14 rounded-full"
@@ -94,14 +94,14 @@ function App() {
         </div>
 
         {/* graph section */}
-        <div className="w-[45%] bg-gradient-to-t from-slate-200 to-slate-100 space-y-4 flex flex-col rounded-md bg-white py-10 px-8">
+        <div className="w-full md:w-[45%] order-2 md:order-3 bg-gradient-to-t from-slate-200 to-slate-100 space-y-4 flex flex-col rounded-md bg-white py-10 px-8">
           <div>
             <h5 className="text-sky-700 font-semibold text-sm">
               Retirement Income
             </h5>
             <h2 className="font-bold text-lg">Starting Year, 2056</h2>
           </div>
-          <div className="flex gap-2">
+          <div className="flex gap-4 md:gap-2">
             <div className="py-3 w-full border-b-2 border-sky-700">
               <h1 className="font-bold text-2xl">$300,000</h1>
               <h6 className="text-xs mt-1 text-slate-500">My Goal.</h6>
@@ -151,8 +151,8 @@ function App() {
               </span>
             </h1>
           </div>
-          <div className="flex gap-12 ">
-            <div className="space-y-2">
+          <div className="flex flex-col md:flex-row gap-12 ">
+            <div className="space-y-4 md:space-y-2">
               <p className="border-b-2  border-stone-400 pb-1 flex gap-2 text-xs">
                 Age:{" "}
                 <span className="font-bold text-xs flex ">
@@ -173,7 +173,7 @@ function App() {
                 </span>
               </p>
             </div>
-            <div className="flex gap-5">
+            <div className="flex gap-6 md:gap-5">
               <div
                 className="radial-progress text-primary"
                 style={{ "--value": 90 }}
@@ -197,7 +197,7 @@ function App() {
         </div>
 
         {/* calc section */}
-        <div className="w-[25%] space-y-6  rounded-md py-10 px-8 flex flex-col bg-gradient-to-t from-slate-50  via-slate-200 to-slate-300">
+        <div className="w-full md:w-[25%] order-3 md:order-4 space-y-6 rounded-md py-10 px-8 flex flex-col bg-gradient-to-t from-slate-50  via-slate-200 to-slate-300">
           <div>
             <h2 className="font-bold text-lg">Retirement Strategy</h2>
           </div>
