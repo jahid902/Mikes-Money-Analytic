@@ -12,9 +12,9 @@ import MoneyChart from "./MoneyChart";
 function App() {
   return (
     <>
-      <div className="font-serif  flex flex-col md:flex-row gap-2 bg-gradient-to-b from-slate-200 to-slate-400 px-2 py-4">
+      <div className="font-serif relative flex flex-col md:flex-row md:gap-2 bg-gradient-to-b from-slate-200 to-slate-400 px-2 py-4">
         {/* nav section */}
-        <div className="w-full  md:w-[5%] order-4 md:order-1 rounded-md items-center flex flex-row md:flex-col justify-evenly md:justify-between p-2 md:py-6 bg-gradient-to-t from-slate-200 to-slate-100 md:px-3">
+        <div className="w-full fixed inset-x-0 bottom-0 z-10 md:static  md:w-[5%] order-4 md:order-1 rounded-md items-center flex flex-row md:flex-col justify-evenly md:justify-between p-2 md:py-6 bg-gradient-to-t from-slate-200 to-slate-100 md:px-3">
           <div className="md:space-y-4 flex flex-row gap-6 md:gap-0 md:flex-col order-2 md:order-1">
             <PiButterflyDuotone
               size={25}
